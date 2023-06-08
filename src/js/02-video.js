@@ -11,9 +11,10 @@ function onPlay({ seconds }) {
   localStorage.setItem(CURRENT_TIME, seconds);
 }
 setCurrentTime();
-function setCurrentTime() {
-  if (!localStorage.getItem(CURRENT_TIME)) {
-    return;
-  }
-  play.setCurrentTime(localStorage.getItem(CURRENT_TIME));
-}
+play.setCurrentTime(localStorage.getItem(CURRENT_TIME));
+// function setCurrentTime() {
+//   if (!localStorage.getItem(CURRENT_TIME)) {
+//     return;
+//   }
+//   play.setCurrentTime(localStorage.getItem(CURRENT_TIME));
+// }
